@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<!-- main container, this will be hidden when details are shown -->
+<main class="">
+    <!-- header image -->
+    <header class="text-center">
+        <img class="img-fluid" src="./imgs/imgi_1_wraper.png" alt="website banner">
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container bg-body-tertiary px-4 rounded-4">
+            <a class="navbar-brand d-flex flex-row align-items-center gap-2" href="#">
+                <div class="logo-img d-inline-block align-text-top w-25">
+                    <img src="./imgs/imgi_2_logo-sm.png" alt="Logo" class="w-100">
+                </div>
+                <p class="m-0">Bootstrap</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">MMORPG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOOTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SAILING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PERMADEATH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SUPERHERO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PIXEL</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- games list section -->
+    <section>
+        <div class="container">
+            <div class="inner mt-5">
+                <div class="row gy-4">
+                    <div class="game-card col-md-6 col-lg-3">
+                        <div class="card bg-primary">
+                            <img src="./imgs/placeholder.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="game-title mb-3 d-flex flex-row justify-content-between align-items-center">
+                                    <h5 class="card-title m-0">{Game Name}</h5>
+                                    <span class="badge bg-secondary">Free</span>
+                                </div>
+                                <p class="card-text text-center">
+                                    {Game Description, make sure to only take the first few words from the description}
+                                </p>
+                                <div class="card-footer p-0 pt-2 text-white d-flex flex-row justify-content-between">
+                                    <span class="badge rounded-pill bg-secondary">{Categroy}</span>
+                                    <span class="badge rounded-pill bg-secondary">Platform</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<div class="spinner d-flex justify-content-center align-items-center bg-primary d-none">
+    <span class="loader"></span>
+</div>
+
+<!-- games details section -->
+<section class="d-none my-5">
+    <div class="container">
+        <div class="inner border border-dark p-4 shadow-lg">
+            <div class="details-header d-flex flex-row justify-content-between align-items-center">
+                <h1>Details:</h1>
+                <button class="fa-solid fa-xmark border border-dark bg-transparent p-2"></button>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-3">
+                    <div class="inner d-flex flex-column">
+                        <img class="w-100" src="./imgs/placeholder.jpg" alt="">
+                        <a class="btn btn-outline-warning rounded-1 rounded-top-0" href="">Show Game</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h2>Title: {title}</h2>
+                    <p>Category: <span class="badge rounded-pill bg-secondary">{category}</span></p>
+                    <p>Platform: <span class="badge rounded-pill bg-secondary">{platform}</span></p>
+                    <p>Status: <span class="badge rounded-pill bg-secondary">{status}</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos ducimus repudiandae
+                        praesentium assumenda nostrum debitis ipsam numquam? Doloremque ad modi quam ipsam ducimus!
+                        Corrupti aperiam animi eius reprehenderit recusandae magnam veritatis harum pariatur nemo
+                        adipisci quasi, similique molestiae sapiente ab maxime doloribus fuga aut ea suscipit eveniet.
+                        Recusandae, eos?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
